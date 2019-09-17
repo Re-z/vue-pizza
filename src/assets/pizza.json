@@ -1,10 +1,22 @@
 [
     {
         "id": 1,
-        "img": "../assets/img/pizza/1.jpg"
+        "img": "./pizza/1.jpg",
+        "desc": "Vegano"
     },
     {
         "id": 2,
-        "img": "../assets/img/pizza/2.jpg"
+        "img": "./pizza/2.jpg",
+        "desc": "Carbonara"
+    },
+    {
+        "id": 3,
+        "img": "./pizza/3.jpg",
+        "desc": "Appetite"
+    },
+    {
+        "id": 4,
+        "img": "./pizza/4.jpg",
+        "desc": "Meat"
     }
 ]

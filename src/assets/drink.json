@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "img": "./drink/1.png",
+        "desc": "Bonaqua"
+    },
+    {
+        "id": 2,
+        "img": "./drink/2.jpg",
+        "desc": "Coca cola"
+    },
+    {
+        "id": 3,
+        "img": "./drink/3.png",
+        "desc": "Fanta"
+    },
+    {
+        "id": 4,
+        "img": "./drink/4.jpg",
+        "desc": "Tomato juice"
+    },
+    {
+        "id": 5,
+        "img": "./drink/5.jpg",
+        "desc": "Staropramen"
+    },
+    {
+        "id": 6,
+        "img": "./drink/6.jpg",
+        "desc": "Leffe"
+    }
+]

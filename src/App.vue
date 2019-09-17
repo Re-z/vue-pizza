@@ -2,6 +2,7 @@
     <div class="wrap">
       <app-header></app-header>
       <app-slider></app-slider>
+      <app-menu></app-menu>
     </div>
 </template>
 

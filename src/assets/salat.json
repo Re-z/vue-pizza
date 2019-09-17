@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "img": "./salat/1.jpg",
+        "desc": "Greko salat"
+    },
+    {
+        "id": 2,
+        "img": "./salat/2.jpg",
+        "desc": "Chicken salat"
+    }
+]

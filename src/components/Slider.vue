@@ -1,13 +1,12 @@
 <template>
-    <div class="container-fluid  bg-secondary p-5">
+    <div class="container-fluid p-3">
+        <h1 class="text-center">Taste our pizza</h1>
         <div class="container slider">
-            <hooper :infiniteScroll="true">
+            <hooper :infiniteScroll="true" :autoPlay="true" :playSpeed="3000" :transition="1000">
 
                 <slide v-for="(pizza,index) in pizzas" :key="index">
                     <div class="d-flex justify-content-center alig-items-center slider-item">
                         <img :src="pizza" alt="">
-                        <p>{{index}}</p>
-                        <p>{{pizza}}</p>
                     </div>
                 </slide>
                
@@ -23,7 +22,7 @@
   export default {
     data: function() {
         return {
-            pizzas: ['../assets/img/pizza/1.jpg','../assets/img/pizza/2.jpg']
+            pizzas: []
 
         }
     },
@@ -31,21 +30,20 @@
       Hooper,
       Slide
     },
-    // created() {
-    //     let pizzas = require('../assets/pizza.json');
-    //     //test
-    //     this.pizzas = pizzas.map(el => {
-    //         return el.img
-    //     })
-    //     console.log(this.pizzas);
-    // }
+    created() {
+        let pizzas = require('../assets/pizza.json');
+        //test
+        this.pizzas = pizzas.map(el => {
+            return el.img
+        })
+    }
   }
 </script>
 <style lang="sass">
     .slider
-        min-height: 600px
+        min-height: 500px
     .hooper-list
-        min-height: 600px
+        min-height: 500px
     .hooper-slide
         display: flex
         align-items: center
