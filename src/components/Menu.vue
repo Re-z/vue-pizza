@@ -73,7 +73,6 @@ export default {
         this.burgers = require('../assets/burger.json')
         this.salats = require('../assets/salat.json')
         this.drinks = require('../assets/drink.json')
-        console.log(this.pizza);
     }
 }
 </script>
@@ -96,6 +95,7 @@ export default {
             img
                 display: block
                 width: 100%
+                min-height: 250px
                 
     .fade-enter-active, .fade-leave-active
         transition: all 1s

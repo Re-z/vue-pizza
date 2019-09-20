@@ -6,7 +6,7 @@
           <img src="../assets/img/logo.png" class="logo" alt="Jacks Pizza">
         </div>
         <div class="col-md-6 col-sm-12 text-right">
-          <button class="btn btn-success">Test Btn</button>
+          <button @click="$emit('showSidebar')" class="btn btn-success">Test Btn</button>
         </div>
       </header>
     </div>
@@ -21,7 +21,8 @@
 export default {
   data() {
 
-  }
+  },
+  
 }
 </script>
 <style lang="sass" scoped>
