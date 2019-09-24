@@ -8,13 +8,18 @@
         <app-sidebar v-if="sidebarIsVisible"  @hideSidebar="hideSidebar"></app-sidebar>
       </transition>
 
+      <app-promo></app-promo>
+      <app-footer></app-footer>
     </div>
 </template>
 
 
 
 <script>
+import Promo from './components/Promo.vue';
+
 require ('@/assets/bootstrap.min.css');
+
 export default {
   data() {
     return {
@@ -29,6 +34,9 @@ export default {
       this.sidebarIsVisible = false
     }
   },
+  components: {
+    appPromo: Promo
+  }
 }
 </script>
 

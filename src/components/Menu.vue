@@ -1,5 +1,5 @@
 <template>
-    <div class="container p-4 menu">
+    <div class="container pt-5 pb-5 menu">
         <h2 class="text-center">Our menu</h2>
         <div class="row tabs">
             <div class="col-md-3 tabs__item text-center" :class="{'is-active' : tabActive === 'burgers'}" @click="tabActive = 'burgers'">Burgers</div>
