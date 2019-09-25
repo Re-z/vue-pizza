@@ -58,6 +58,8 @@
 </template>
 
 <script>
+import getDataFromFirebase from '../scripts/fetch.js';
+
 export default {
     data() {
         return {
@@ -68,11 +70,12 @@ export default {
             drinks: '',
         }
     },
+    
     created() {
-        this.pizzas = require('../assets/pizza.json');
-        this.burgers = require('../assets/burger.json')
-        this.salats = require('../assets/salat.json')
-        this.drinks = require('../assets/drink.json')
+        getDataFromFirebase('https://vue-pizza-108de.firebaseio.com/burgers.json').then(data => {this.burgers = data});
+        getDataFromFirebase('https://vue-pizza-108de.firebaseio.com/pizza.json').then(data => {this.pizzas = data});
+        getDataFromFirebase('https://vue-pizza-108de.firebaseio.com/salat.json').then(data => {this.salats = data});
+        getDataFromFirebase('https://vue-pizza-108de.firebaseio.com/drinks.json').then(data => {this.drinks = data});
     }
 }
 </script>

@@ -19,6 +19,8 @@
   import { Hooper, Slide } from 'hooper';
   import 'hooper/dist/hooper.css';
 
+import getDataFromFirebase from '../scripts/fetch.js';
+
   export default {
     data: function() {
         return {
@@ -31,11 +33,12 @@
       Slide
     },
     created() {
-        let pizzas = require('../assets/pizza.json');
-        //test
-        this.pizzas = pizzas.map(el => {
-            return el.img
-        })
+        getDataFromFirebase('https://vue-pizza-108de.firebaseio.com/pizza.json')
+            .then(data => {
+                this.pizzas = data.map(el => {
+                    return el.img
+                })
+        });
     }
   }
 </script>
