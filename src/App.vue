@@ -9,6 +9,7 @@
       </transition>
 
       <app-promo></app-promo>
+      <app-subscribe></app-subscribe>
       <app-footer></app-footer>
     </div>
 </template>

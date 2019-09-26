@@ -6,6 +6,7 @@ import Slider from './components/Slider';
 import Menu from './components/Menu';
 import Sidebar from './components/Sidebar';
 import ScrollReveal from 'vue-scroll-reveal';
+import Subscribe from './components/Subscribe';
 
 Vue.config.productionTip = false
 Vue.component('app-header', Heading)
@@ -13,6 +14,7 @@ Vue.component('app-footer', Footer)
 Vue.component('app-slider', Slider)
 Vue.component('app-menu', Menu)
 Vue.component('app-sidebar', Sidebar)
+Vue.component('app-subscribe', Subscribe)
 
 Vue.use(ScrollReveal, {
   duration: 800,
