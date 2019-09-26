@@ -55,26 +55,10 @@ export default {
             //делаем запрос
 
             let emailsFromDB = await getDataFromFirebase('https://vue-pizza-108de.firebaseio.com/subscribtions.json');
-            // проходимся по каждому полученному элементу и сравниваем значение нашего поля со значениями в элементах
-            for(let i = 0; i < emailsFromDB.length; i++) {
-               
-                if(emailsFromDB[i].email === this.inputValue) {
-                    console.log(emailsFromDB.email);
+            //STUCKED
 
-                    //если есть совпадение - такой эмейл уже есть в базе
-                    this.isEmailUnique = false;
-                    break
-                }
-                
-            }
-            
-            if(this.isEmailUnique) {
-                this.handleResult = 'Email is unique'
-                this.postToDB();
-            } else {
-                this.handleResult = 'This email is already in DataBase';
-                this.clearMsgField();
-            }
+
+
         },
         clearMsgField() {
             setTimeout(() => {
