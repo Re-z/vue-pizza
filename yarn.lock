@@ -1495,12 +1495,14 @@ browserify-zlib@^0.2.0:
     pako "~1.0.5"
 
 browserslist@^4.0.0, browserslist@^4.3.4, browserslist@^4.5.4, browserslist@^4.6.3:
-  version "4.7.0"
-  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.7.0.tgz#9ee89225ffc07db03409f2fee524dc8227458a17"
+  version "4.16.6"
+  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.16.6.tgz#d7901277a5a88e554ed305b183ec9b0c08f66fa2"
   dependencies:
-    caniuse-lite "^1.0.30000989"
-    electron-to-chromium "^1.3.247"
-    node-releases "^1.1.29"
+    caniuse-lite "^1.0.30001219"
+    colorette "^1.2.2"
+    electron-to-chromium "^1.3.723"
+    escalade "^3.1.1"
+    node-releases "^1.1.71"
 
 buffer-from@^1.0.0:
   version "1.1.1"
@@ -1665,9 +1667,9 @@ caniuse-api@^3.0.0:
     lodash.memoize "^4.1.2"
     lodash.uniq "^4.5.0"
 
-caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000980, caniuse-lite@^1.0.30000989:
-  version "1.0.30000989"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000989.tgz#b9193e293ccf7e4426c5245134b8f2a56c0ac4b9"
+caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000980, caniuse-lite@^1.0.30001219:
+  version "1.0.30001228"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001228.tgz#bfdc5942cd3326fa51ee0b42fbef4da9d492a7fa"
 
 case-sensitive-paths-webpack-plugin@^2.2.0:
   version "2.2.0"
@@ -1882,6 +1884,10 @@ color@^3.0.0:
   dependencies:
     color-convert "^1.9.1"
     color-string "^1.5.2"
+
+colorette@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/colorette/-/colorette-1.2.2.tgz#cbcc79d5e99caea2dbf10eb3a26fd8b3e6acfa94"
 
 combined-stream@^1.0.6, combined-stream@~1.0.6:
   version "1.0.8"
@@ -2556,9 +2562,9 @@ ejs@^2.6.1:
   version "2.7.1"
   resolved "https://registry.yarnpkg.com/ejs/-/ejs-2.7.1.tgz#5b5ab57f718b79d4aca9254457afecd36fa80228"
 
-electron-to-chromium@^1.3.247:
-  version "1.3.259"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.259.tgz#d0b14836df3c89e86fa47be67315daa642fe9d5c"
+electron-to-chromium@^1.3.723:
+  version "1.3.738"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.738.tgz#aec24b091c82acbfabbdcce08076a703941d17ca"
 
 elliptic@^6.0.0:
   version "6.5.1"
@@ -2646,6 +2652,10 @@ es-to-primitive@^1.2.0:
     is-callable "^1.1.4"
     is-date-object "^1.0.1"
     is-symbol "^1.0.2"
+
+escalade@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/escalade/-/escalade-3.1.1.tgz#d8cfdc7000965c5a0174b4a82eaa5c0552742e40"
 
 escape-html@~1.0.3:
   version "1.0.3"
@@ -3510,6 +3520,10 @@ hmac-drbg@^1.0.0:
     minimalistic-assert "^1.0.0"
     minimalistic-crypto-utils "^1.0.1"
 
+hooper@^0.3.4:
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/hooper/-/hooper-0.3.4.tgz#afb425d23f47f931ce2a9c00b755992cb0e2bcf9"
+
 hoopy@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/hoopy/-/hoopy-0.1.4.tgz#609207d661100033a9a9402ad3dea677381c1b1d"
@@ -3936,6 +3950,16 @@ is-descriptor@^1.0.0, is-descriptor@^1.0.2:
 is-directory@^0.3.1:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/is-directory/-/is-directory-0.3.1.tgz#61339b6f2475fc772fd9c9d83f5c8575dc154ae1"
+
+is-dom-node-list@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/is-dom-node-list/-/is-dom-node-list-1.2.1.tgz#141ded0c66de759d0976800d21370bb908f2950f"
+  dependencies:
+    is-dom-node "^1.0.4"
+
+is-dom-node@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/is-dom-node/-/is-dom-node-1.0.4.tgz#abb18af7133f1e687610cfeb274da1ced342f1c5"
 
 is-extendable@^0.1.0, is-extendable@^0.1.1:
   version "0.1.1"
@@ -4577,6 +4601,10 @@ minipass@^2.2.1, minipass@^2.3.5:
     safe-buffer "^5.1.2"
     yallist "^3.0.0"
 
+miniraf@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/miniraf/-/miniraf-1.0.0.tgz#5d88e108bbdcb55b4a2ff3da337f24a13a3377e1"
+
 minizlib@^1.2.1:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/minizlib/-/minizlib-1.2.2.tgz#6f0ccc82fa53e1bf2ff145f220d2da9fa6e3a166"
@@ -4794,11 +4822,9 @@ node-pre-gyp@^0.12.0:
     semver "^5.3.0"
     tar "^4"
 
-node-releases@^1.1.29:
-  version "1.1.30"
-  resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.1.30.tgz#35eebf129c63baeb6d8ddeda3c35b05abfd37f7f"
-  dependencies:
-    semver "^5.3.0"
+node-releases@^1.1.71:
+  version "1.1.72"
+  resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.1.72.tgz#14802ab6b1039a79a0c7d662b610a5bbd76eacbe"
 
 node-sass@^4.9.0:
   version "4.12.0"
@@ -5978,6 +6004,10 @@ relateurl@0.2.x:
   version "0.2.7"
   resolved "https://registry.yarnpkg.com/relateurl/-/relateurl-0.2.7.tgz#54dbf377e51440aca90a4cd274600d3ff2d888a9"
 
+rematrix@0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/rematrix/-/rematrix-0.3.0.tgz#4f3f9156aa80ded8a8ca23785f48c6012b6dea4a"
+
 remove-trailing-separator@^1.0.1:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/remove-trailing-separator/-/remove-trailing-separator-1.1.0.tgz#c24bce2a283adad5bc3f58e0d48249b92379d8ef"
@@ -6218,6 +6248,14 @@ schema-utils@^1.0.0:
     ajv "^6.1.0"
     ajv-errors "^1.0.0"
     ajv-keywords "^3.1.0"
+
+scrollreveal@^4.0.2:
+  version "4.0.9"
+  resolved "https://registry.yarnpkg.com/scrollreveal/-/scrollreveal-4.0.9.tgz#47866e1967ff604e64bac28818fe0dcea44f2c8b"
+  dependencies:
+    miniraf "1.0.0"
+    rematrix "0.3.0"
+    tealight "0.3.6"
 
 scss-tokenizer@^0.2.3:
   version "0.2.3"
@@ -6806,6 +6844,13 @@ tar@^4:
     safe-buffer "^5.1.2"
     yallist "^3.0.3"
 
+tealight@0.3.6:
+  version "0.3.6"
+  resolved "https://registry.yarnpkg.com/tealight/-/tealight-0.3.6.tgz#14c8071ce3c188972a5cb7d8a5668ca2820b4292"
+  dependencies:
+    is-dom-node "^1.0.4"
+    is-dom-node-list "^1.2.1"
+
 terser-webpack-plugin@^1.2.3, terser-webpack-plugin@^1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/terser-webpack-plugin/-/terser-webpack-plugin-1.4.1.tgz#61b18e40eaee5be97e771cdbb10ed1280888c2b4"
@@ -7207,6 +7252,12 @@ vue-loader@^15.7.0:
     loader-utils "^1.1.0"
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
+
+vue-scroll-reveal@^1.0.11:
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/vue-scroll-reveal/-/vue-scroll-reveal-1.0.11.tgz#c2b0b78eff0d65381ba0bbce0d8801023aac649b"
+  dependencies:
+    scrollreveal "^4.0.2"
 
 vue-style-loader@^4.1.0:
   version "4.1.2"
